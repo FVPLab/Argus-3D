@@ -1,4 +1,4 @@
-name: argus-3d2
+name: argus-3d
 channels:
   - pytorch
   - conda-forge
