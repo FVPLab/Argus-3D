@@ -1,0 +1,79 @@
+method: fast_transformer
+stage2_method: fast_transformer
+output_dataset_path:
+stage1_load_path:
+data:
+  input_type: pointcloud
+  classes: null
+  path: datasets
+  pointcloud_n: 30000
+  pointcloud_noise: 0.005
+  points_subsample: 2048
+  points_file: points.npz
+  points_iou_file: points.npz
+  voxels_file: null
+  quantize_dataset_path:
+model:
+  encoder: pointnet_local_pool
+  encoder_kwargs:
+    hidden_dim: 32
+    plane_type: ['xz', 'xy', 'yz']
+    plane_resolution: 256
+    unet: True
+    unet_kwargs:
+      depth: 4
+      merge_mode: concat
+      start_filts: 32
+  decoder: simple_local
+  decoder_kwargs:
+    sample_mode: bilinear
+    hidden_size: 32
+  c_dim: 32
+
+  quantizer: quantize_3plane_multi_improve_revise_highreso256_relu_quantize1_256_symm_1
+  quantizer_kwargs:
+    embedding_num: 8192
+    embedding_dim: 512
+    beta: 0.4
+    reduce_dim: 4
+
+
+  stage2_model: fast_transformer
+  stage2_model_kwargs:
+    sequence_length: 1025
+    stage2_embed_dim: 2048
+    transformer_embed_dim: 2048
+    transformer_n_head: 24
+    init_with_vqvae: False
+    embed_drop_p: 0.1
+    position_num: 3072
+    transformer_layer: 32
+
+  fast_transformer_kwargs:
+    attention_type: causal-linear
+
+training:
+  noisy: True
+  optim: adamw
+  out_dir:
+  batch_size:
+  model_selection_metric: iou
+  model_selection_mode: maximize
+  print_every: 1000
+  visualize_every: 12000
+  validate_every: 4000
+  checkpoint_every: 4000
+  backup_every: 20000
+  n_workers: 8
+  n_workers_val: 4
+  stage2_lr: 1e-6
+test:
+  threshold: 0.2
+  eval_mesh: true
+  eval_pointcloud: false
+  model_file: model_best.pt
+generation:
+  vis_n_outputs: 2
+  refine: false
+  n_x: 128
+  n_z: 1
