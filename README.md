@@ -1,4 +1,4 @@
-# Argus-3D
+# Argus-3D: Pushing the Limits of 3D Shape Generation at Scale
 [**Paper**](https://arxiv.org/abs/2306.11510) | [**Project Page**](https://argus-3d.github.io)
 
 ## Installation
