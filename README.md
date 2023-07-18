@@ -15,7 +15,8 @@ python setup.py build_ext --inplace
 ```
 
 ## Generation
-Download [checkpoint](https://drive.google.com/file/d/1Zl12maRxp1Yj6pAIyuF5-XeOJcvRrSQo/view?usp=sharing) and place it into `output/PR256_ED512_EN8192/class-guide/transformer3072_24_32`.
+~~Download [checkpoint]() and place it into `output/PR256_ED512_EN8192/class-guide/transformer3072_24_32`.~~
+I'm sorry, but there are still some issues with the current ckpt. I will update it within this week.
 
 You can try class-guide generation by run:
 ```
