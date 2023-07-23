@@ -15,8 +15,7 @@ python setup.py build_ext --inplace
 ```
 
 ## Generation
-~~Download [checkpoint]() and place it into `output/PR256_ED512_EN8192/class-guide/transformer3072_24_32`.~~
-I'm sorry, but there are still some issues with the current ckpt. I will update it within this week.
+Download [checkpoint](https://drive.google.com/file/d/10lRH2XMOEwpsr2Ho_rxtRT6MMybLyeD-/view?usp=sharing) and place it into `output/PR256_ED512_EN8192/class-guide/transformer3072_24_32`.
 
 You can try class-guide generation by run:
 ```
@@ -24,11 +23,11 @@ python generate_class-guide.py --batch_size=16 --cate chair
 ```
 This script should create a folder `output/PR256_ED512_EN8192/class-guide/transformer3072_24_32/class_cond` where the output meshes are stored.
 
-**Note**: Our model requires significant memory, and it's recommended to run it on a GPU with high VRAM capacity (40GB or above). Generating a single mesh on the A100 (80GB) takes approximately 50 seconds on average.
+**Note**: Our model requires significant memory, and it's recommended to run it on a GPU with high VRAM capacity (40GB or above). Generating a single mesh on the A100 (80GB) takes approximately 50 seconds on average, while on V100 (32GB) it takes ~6 minutes.
 
 ### Coming Soon
 
-* Image-guide generation
+* Image-guide generation(Code and ckpt will be released in August)
 * Text-guide generation
 * Training code
 
