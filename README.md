@@ -15,9 +15,11 @@ python setup.py build_ext --inplace
 ```
 
 ## Generation
-Download [checkpoint](https://drive.google.com/file/d/10lRH2XMOEwpsr2Ho_rxtRT6MMybLyeD-/view?usp=sharing) and place it into `output/PR256_ED512_EN8192/class-guide/transformer3072_24_32`.
+Download [stage1 checkpoint](https://drive.google.com/file/d/12_H2AzXIE8F1dEwfJbaezJmcqb7urERw/view?usp=sharing) and place it into `output/PR256_ED512_EN8192`.
 
-You can try class-guide generation by run:
+Download [stage2 checkpoint](https://drive.google.com/file/d/10lRH2XMOEwpsr2Ho_rxtRT6MMybLyeD-/view?usp=sharing) and place it into `output/PR256_ED512_EN8192/class-guide/transformer3072_24_32`.
+
+Then you can try class-guide generation by run:
 ```
 python generate_class-guide.py --batch_size=16 --cate chair
 ```
