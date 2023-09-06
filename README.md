@@ -21,7 +21,7 @@ Download [stage2 checkpoint](https://drive.google.com/file/d/10lRH2XMOEwpsr2Ho_r
 
 Then you can try class-guide generation by run:
 ```
-python generate_class-guide.py --batch_size=16 --cate chair
+python generate_class-guide.py --batch_size 16 --cate chair
 ```
 This script should create a folder `output/PR256_ED512_EN8192/class-guide/transformer3072_24_32/class_cond` where the output meshes are stored.
 
@@ -29,7 +29,8 @@ This script should create a folder `output/PR256_ED512_EN8192/class-guide/transf
 
 ### Coming Soon
 
-* Image-guide generation(Code and ckpt will be released in August)
+* Datasets(occupancies, rendered images and BLIP captions)
+* Image-guide generation
 * Text-guide generation
 * Training code
 
@@ -45,7 +46,7 @@ Thanks for open-sourcing!
 ```
 @misc{yu2023pushing,
       title={Pushing the Limits of 3D Shape Generation at Scale}, 
-      author={Wang Yu and Xuelin Qian and Jingyang Huo and Tiejun Huang and Bo Zhao and Yanwei Fu},
+      author={Yu Wang and Xuelin Qian and Jingyang Huo and Tiejun Huang and Bo Zhao and Yanwei Fu},
       year={2023},
       eprint={2306.11510},
       archivePrefix={arXiv},
