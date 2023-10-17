@@ -27,9 +27,11 @@ This script should create a folder `output/PR256_ED512_EN8192/class-guide/transf
 
 **Note**: Our model requires significant memory, and it's recommended to run it on a GPU with high VRAM capacity (40GB or above). Generating a single mesh on the A100 (80GB) takes approximately 50 seconds on average, while on V100 (32GB) it takes ~6 minutes.
 
+## Dataset
+The occupancies, point clouds, and supplementary rendered images based on the Objaverse dataset can be downloaded from [https://huggingface.co/datasets/BAAI/Objaverse-MIX](https://huggingface.co/datasets/BAAI/Objaverse-MIX)
+
 ### Coming Soon
 
-* Datasets(occupancies, rendered images and BLIP captions)
 * Image-guide generation
 * Text-guide generation
 * Training code
