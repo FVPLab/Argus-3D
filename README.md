@@ -1,4 +1,4 @@
-# Argus-3D: Pushing the Limits of 3D Shape Generation at Scale
+# Argus-3D: Pushing Auto-regressive Models for 3D Shape Generation at Capacity and Scalability
 [**Paper**](https://arxiv.org/abs/2306.11510) | [**Project Page**](https://argus-3d.github.io)
 
 ## Installation
@@ -46,6 +46,14 @@ Thanks for open-sourcing!
 ## BibTeX
 
 ```
+@inproceedings{inproceedings,
+      author = {Luo, Simian and Qian, Xuelin and Fu, Yanwei and Zhang, Yinda and Tai, Ying and Zhang, Zhenyu and Wang, Chengjie and Xue, Xiangyang},
+      year = {2023},
+      month = {10},
+      pages = {14093-14103},
+      title = {Learning Versatile 3D Shape Generation with Improved Auto-regressive Models},
+      doi = {10.1109/ICCV51070.2023.01300}
+}
 @misc{yu2023pushing,
       title={Pushing the Limits of 3D Shape Generation at Scale}, 
       author={Yu Wang and Xuelin Qian and Jingyang Huo and Tiejun Huang and Bo Zhao and Yanwei Fu},
