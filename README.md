@@ -1,5 +1,5 @@
 # Argus-3D: Pushing Auto-regressive Models for 3D Shape Generation at Capacity and Scalability
-[**Paper**](https://arxiv.org/abs/2306.11510) | [**Project Page**](https://argus-3d.github.io)
+[**Paper**](https://arxiv.org/abs/2402.12225) | [**Project Page**](https://argus-3d.github.io)
 
 ## Installation
 You can create an anaconda environment called `argus-3d` using
@@ -54,11 +54,11 @@ Thanks for open-sourcing!
       title = {Learning Versatile 3D Shape Generation with Improved Auto-regressive Models},
       doi = {10.1109/ICCV51070.2023.01300}
 }
-@misc{yu2023pushing,
-      title={Pushing the Limits of 3D Shape Generation at Scale}, 
-      author={Yu Wang and Xuelin Qian and Jingyang Huo and Tiejun Huang and Bo Zhao and Yanwei Fu},
-      year={2023},
-      eprint={2306.11510},
+@misc{qian2024pushing,
+      title={Pushing Auto-regressive Models for 3D Shape Generation at Capacity and Scalability}, 
+      author={Xuelin Qian and Yu Wang and Simian Luo and Yinda Zhang and Ying Tai and Zhenyu Zhang and Chengjie Wang and Xiangyang Xue and Bo Zhao and Tiejun Huang and Yunsheng Wu and Yanwei Fu},
+      year={2024},
+      eprint={2402.12225},
       archivePrefix={arXiv},
       primaryClass={cs.CV}
 }
